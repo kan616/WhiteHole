@@ -1,0 +1,36 @@
+// swift-tools-version: 5.9
+//
+//  Package.swift
+//  AudioCapture
+//
+//  Swift Package configuration
+//  Copyright (C) 2025
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+
+import PackageDescription
+
+let package = Package(
+    name: "AudioCapture",
+    platforms: [
+        .macOS(.v12)
+    ],
+    products: [
+        .executable(
+            name: "AudioCapture",
+            targets: ["AudioCapture"]
+        )
+    ],
+    dependencies: [],
+    targets: [
+        .executableTarget(
+            name: "AudioCapture",
+            dependencies: [],
+            path: "AudioCapture/Sources"
+        )
+    ]
+)
