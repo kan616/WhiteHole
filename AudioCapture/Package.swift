@@ -20,17 +20,16 @@ let package = Package(
         .macOS(.v12)
     ],
     products: [
-        .executable(
+        .library(
             name: "AudioCapture",
             targets: ["AudioCapture"]
         )
     ],
     dependencies: [],
     targets: [
-        .executableTarget(
+        .target(
             name: "AudioCapture",
-            dependencies: [],
-            path: "AudioCapture/Sources"
+            dependencies: []
         )
     ]
 )
